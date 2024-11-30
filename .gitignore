@@ -40,3 +40,5 @@ yarn-error.*
 app-example
 
 *.mp4
+build-*.apk
+build-*.tar.gz

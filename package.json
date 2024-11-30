@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "android": "expo run:android",
+    "build:test:android": "eas build --profile test:android -p android --local",
+    "build:test:ios": "eas build --profile test:ios -p ios --local",
     "clean": "expo prebuild --clean && expo start --clear",
     "start": "expo start",
     "ios": "expo run:ios",
