@@ -38,7 +38,7 @@ jobs:
       - name: 🏗 Configure Maestro
         uses: dniHze/maestro-test-action@v1
 
-      - name: 🏗 Setup EAS
+      - name: 🏗 Set up EAS
         uses: expo/expo-github-action@v8
         with:
           eas-version: latest
