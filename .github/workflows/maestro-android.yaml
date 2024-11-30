@@ -74,9 +74,9 @@ jobs:
           path: /home/runner/.maestro/tests/
           if-no-files-found: ignore
 
-      - name: Upload failure recordings
+      - name: Upload recordings
         uses: actions/upload-artifact@v4
-        if: failure()
+        if: always() # or failure() to save storage
         with:
           name: maestro-recordings
           path: /home/runner/work/**/*.mp4
