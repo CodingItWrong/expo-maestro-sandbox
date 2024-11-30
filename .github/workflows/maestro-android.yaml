@@ -52,7 +52,7 @@ jobs:
           sudo udevadm trigger --name-match=kvm
 
       - name: Build locally via EAS
-        run: npm run build:test:android --non-interactive --output=build.apk
+        run: npm run build:test:android -- --non-interactive --output=build.apk
         shell: bash
 
       - name: 🧪 Install and test app
