@@ -66,11 +66,11 @@ jobs:
           target: google_apis
           script: eas build:run -p android --path build.apk && maestro test .maestro/*.yaml
 
-      - name: Upload failure screenshots
+      - name: Upload Maestro output
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: maestro-screenshots
+          name: maestro-output
           path: /home/runner/.maestro/tests/
           if-no-files-found: ignore
 
