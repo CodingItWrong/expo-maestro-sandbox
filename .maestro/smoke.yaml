@@ -1,0 +1,10 @@
+appId: com.codingitwrong.expomaestrosandbox
+---
+- startRecording: Smoke
+
+- launchApp
+- assertVisible: "Welcome!"
+- tapOn: "Explore.*"
+- assertVisible: "This app includes example code.*"
+
+- stopRecording
