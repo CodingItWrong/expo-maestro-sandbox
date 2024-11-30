@@ -3,9 +3,6 @@ name: "Maestro Tests - iOS"
 on:
   pull_request:
     types: [opened, synchronize, reopened]
-  push: # temp
-    branches:
-      - gha
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
