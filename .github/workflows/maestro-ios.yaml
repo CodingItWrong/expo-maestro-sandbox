@@ -28,13 +28,13 @@ jobs:
       - name: 🏗 Set up Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: "15.4" # TODO: update
+          xcode-version: "16.1"
 
       - name: 🏗 Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          ruby-version: "3.3.3" # TODO: update
+          ruby-version: "3.3.6"
 
       - name: 🏗 Configure Maestro
         uses: dniHze/maestro-test-action@v1
@@ -42,7 +42,7 @@ jobs:
       - name: 🏗 Set up simulator
         uses: futureware-tech/simulator-action@v2
         with:
-          model: "iPhone 15 Pro" # TODO: update
+          model: "iPhone 16"
 
       - name: Install tools
         run: gem install fastlane
