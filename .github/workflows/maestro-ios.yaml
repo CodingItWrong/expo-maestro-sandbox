@@ -54,7 +54,7 @@ jobs:
           token: ${{ secrets.EXPO_TOKEN }}
 
       - name: Build locally via EAS
-        run: npm build:test:ios --local --non-interactive --output=build.tar.gz
+        run: npm run build:test:ios --non-interactive --output=build.tar.gz
 
       - name: Install app on simulator
         run: eas build:run -p ios --path build.tar.gz
